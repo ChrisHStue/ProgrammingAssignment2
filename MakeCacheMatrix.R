@@ -1,8 +1,3 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
-
 makeCacheMatrix <- function(x = matrix()) {       # make matrix
     inv <- NULL
     set <- function(y) {
@@ -18,8 +13,6 @@ makeCacheMatrix <- function(x = matrix()) {       # make matrix
 }
 
 
-## Write a short comment describing this function.  makeCacheMatrix generates a matrix, inverts and chaches it
-
 cacheSolve <- function(x, ...) {
     inv <- x$getSolve()
     if(!is.null(inv)) {
@@ -31,5 +24,4 @@ cacheSolve <- function(x, ...) {
     x$setSolve(inv)
     inv
 }
-
 
